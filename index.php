@@ -4,7 +4,7 @@
     while(have_posts()) {
         the_post(); ?>
         hello
-    <?php}
+    <?php }
 
 ?>
 
