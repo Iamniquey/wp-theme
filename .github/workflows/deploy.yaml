@@ -14,4 +14,4 @@ jobs:
         run: |
           curl -X POST ${{ secrets.PLESK_WEBHOOK_URL }} \
             -H "Content-Type: application/json"
-            
+            -d '{}'
