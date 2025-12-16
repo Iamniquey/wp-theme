@@ -1,4 +1,5 @@
-<h1>Welcome</h1>
+<?php get_header() ?>
+
 
 <?php
     while(have_posts()) {
@@ -10,4 +11,4 @@
 
 ?>
 
-<p>Footer</p>
+<?php get_footer() ?>

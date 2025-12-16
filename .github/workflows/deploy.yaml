@@ -1,0 +1,17 @@
+name: Automatic deploy to plesk
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  notify-plesk:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Plesk Git pull
+        run: |
+          curl -X POST \
+            -H "Content-Type: application/json" \
+            "${{ secrets.PLESK_WEBHOOK_URL }}"
