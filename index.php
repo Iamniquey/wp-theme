@@ -1,7 +1,8 @@
 <?php get_header() ?>
 
+<p>These are my posts</p>
 
-<?php
+<?php 
     while(have_posts()) {
         the_post(); ?>
         <div>
