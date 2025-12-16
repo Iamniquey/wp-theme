@@ -13,5 +13,5 @@ jobs:
       - name: Trigger Plesk Git pull
         run: |
           curl -X POST ${{ secrets.PLESK_WEBHOOK_URL }} \
-            -H "Content-Type: application/json"
+            -H "Content-Type: application/json" \
             -d '{}'
